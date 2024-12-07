@@ -3,9 +3,11 @@ import User from "../models/userModel.js";
 import asyncHandler from "./asyncHandler.js";
 
 const authenticate = asyncHandler(async (req, res, next) => {
+    // if the token is valid then the user is able to login
     let token;
-    token = req.cookies.jwt
+    token = req.cookies.jwt // read JWT from the 'jwt' cookie
 
+    // check the token is valid or not
     if (token) {
         try {
             const decoded = jwt.verify(token, process.env.JWT_SECRET)
