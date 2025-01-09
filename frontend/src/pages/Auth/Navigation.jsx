@@ -10,6 +10,7 @@ import './Navigation.css'
 import { useLogoutMutation } from '../../redux/api/usersApiSlice';
 import { logout } from '../../redux/features/auth/authSlice';
 import { FaChevronDown } from "react-icons/fa";
+import FavoritesCount from '../Products/FavoritesCount';
 
 
 const Navigation = () => {
@@ -60,7 +61,8 @@ const Navigation = () => {
             </Link>
             <Link to='/favorite' className='flex items-center transition-transform transform hover:translate-x-2'>
                 <FaHeart className='mr-2 mt-[3rem]' size={26}/>
-                <span className="hiddden nav-item-name mt-[3rem]">Favorite</span>
+                <span className="hiddden nav-item-name mt-[3rem]">Favorite</span> {" "}
+                <FavoritesCount/>
             </Link>
         </div>
 
