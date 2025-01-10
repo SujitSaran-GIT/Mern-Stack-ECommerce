@@ -13,7 +13,7 @@ An advanced and feature-rich e-commerce application built using the MERN (MongoD
 - Shopping cart and wishlist management
 - Secure checkout with payment gateway integration
 - Order history and status tracking
-- Responsive design for mobile and desktop
+- Mostly Suitable for desktop
 
 ### **Admin Features**
 - Dashboard for managing users, products, and orders
