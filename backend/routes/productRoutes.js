@@ -13,7 +13,8 @@ import {
     fetchAllProducts,
     addProductReview,
     fetchTopProducts,
-    fetchNewProducts
+    fetchNewProducts,
+    filterProducts
 } from "../controllers/productController.js";
 
 router.route("/").get(fetchProducts).post(authenticate,authorizeAdmin,formidable(), addProduct)
@@ -29,5 +30,6 @@ router.route("/:id").get(fetchProductsById).put(authenticate, authorizeAdmin, fo
 
 router.route("/:id").delete(authenticate, authorizeAdmin, removeProduct)
 
+router.route("/filtered-products").post(filterProducts);
 
 export default router

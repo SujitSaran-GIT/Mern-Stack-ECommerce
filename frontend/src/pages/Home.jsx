@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <>
     {!keyword ? <Header/> : null}
-    {isLoading ? (<Loader/>) : isError ? (<Message variant='danger'>{isError?.data.message || isError.errir}</Message>):(
+    {isLoading ? (<Loader/>) : isError ? (<Message variant='danger'>{isError?.data.message || isError.error}</Message>):(
         <>
         <div className="flex justify-between items-center">
             <h1 className="ml-[20rem] mt-[10rem] text-[3rem]">Special Products</h1>
