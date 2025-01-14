@@ -73,7 +73,7 @@ const ProductCard = ({ p }) => {
                         className="p-2 rounded-full"
                         onClick={() => addToCartHandler(p, 1)}
                     >
-                        <AiOutlineShoppingCart size={25} />
+                        <AiOutlineShoppingCart size={25} className="text-white"/>
                     </button>
                 </section>
             </div>

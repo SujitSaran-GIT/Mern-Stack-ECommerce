@@ -6,7 +6,7 @@ import { useLoginMutation } from '../../redux/api/usersApiSlice'
 import { setCredentials } from '../../redux/features/auth/authSlice'
 import { toast } from 'react-toastify'
 import Loader from '../../components/Loader.jsx'
-import bgone from '../../assets/bgone.jpg'
+
 
 const Login = () => {
     const [email,setEmail] = useState('')

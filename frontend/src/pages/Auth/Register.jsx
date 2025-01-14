@@ -6,7 +6,7 @@ import Loader from '../../components/Loader.jsx'
 import {setCredentials } from '../../redux/features/auth/authSlice'
 import { toast } from 'react-toastify'
 import { useRegisterMutation } from '../../redux/api/usersApiSlice'
-import bgone from '../../assets/bgone.jpg'
+
 
 const Register = () => {
   const [username, setUserName] = useState("")
@@ -109,7 +109,6 @@ const Register = () => {
             </p>
           </div>
         </div>
-        <img src={bgone} alt="" className='h-[45rem] w-[45%] xl-block rounded-lg'/>
       </section>
     </>
   )

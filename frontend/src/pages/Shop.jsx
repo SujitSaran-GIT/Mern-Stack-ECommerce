@@ -152,7 +152,7 @@ const Shop = () => {
 
                         <div className="p-5 pt-0">
                             <button
-                                className="w-full my-4 bg-pink-600 border-pink-600 rounded-full py-2"
+                                className="w-full my-4 bg-pink-600 border-pink-600 rounded-full py-2 text-white font-semibold"
                                 onClick={() => window.location.reload()}
                             >
                                 Reset
@@ -161,7 +161,7 @@ const Shop = () => {
                     </div>
 
                     <div className="p-3">
-                        <h2 className="h4 text-center mb-2">{products?.length} Products</h2>
+                        <h2 className="h4 text-center mb-2 text-white">{products?.length}: Products</h2>
                         <div className="flex flex-wrap">
                             {products.length === 0 ? (
                                 <Loader />
